@@ -842,6 +842,26 @@ void test_drewtre(){
   cout << "\n"; 
 }
 
+void test_nguyed18() {
+    cout << "\n nguyed18's test function " << endl;
+    BST<string> t1;
+    t1.Add("x");
+    t1.Add("d");
+    t1.Add("f");
+    t1.Add("b");
+    t1.Add("a");
+    t1.Add("g");
+    t1.Add("e");
+    t1.Add("c");
+
+    assert(t1.IsEmpty() == false);
+    assert(t1.NumberOfNodes() == 8);
+    assert(t1.Contains("f") == true);
+    cout << t1 << endl;
+    cout << "\n End of nguyed18's test function" << endl;
+
+}
+	
 // Calling all test functions
 void testBSTAll() {
   test_pisan01();
@@ -868,6 +888,7 @@ void testBSTAll() {
   test_Brian-Hou();
   test_jstew701();
   test_drewtre();
+  test_nguyed18();
 }
 
 TEST_CASE("BST Tests") {
